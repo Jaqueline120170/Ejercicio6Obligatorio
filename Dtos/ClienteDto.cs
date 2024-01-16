@@ -38,7 +38,7 @@ namespace Ejercicio6Obligatorio.Dtos
         override
         public string ToString()
         {
-            string clienteString= this.nombreCliente + " " + this.apellidosCliente;
+            string clienteString= this.nombreCompletoCliente + " " + this.edad;
             return clienteString;
         }
 

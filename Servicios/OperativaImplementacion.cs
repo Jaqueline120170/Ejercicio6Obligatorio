@@ -32,5 +32,17 @@ namespace Ejercicio6Obligatorio.Servicios
             return new ClienteDto (idCliente, nombreCliente, apellidosCliente, edad);
 
         }
+
+        public void ordenarListaClientes(List<ClienteDto> listaAntigua)
+        {
+            if(listaAntigua.Count >= 3)
+            {
+
+            }
+            else
+            {
+                Console.WriteLine("Necesita introducir más clientes a la lista");
+            }
+        }
     }
 }

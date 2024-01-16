@@ -29,7 +29,7 @@ namespace Ejercicio6Obligatorio.Controladores
                     case 1:
                         Console.WriteLine("Dar alta nuevo cliente");
                         oi.darAltaCliente(listaCliente);
-                        //el valor de la referencia nde dar alta clientes pasará a lista antigua
+                        //el valor de la referencia de dar alta clientes pasará a lista antigua
                         foreach (ClienteDto clienteNuevo in listaCliente)
                         {
                             Console.WriteLine(clienteNuevo.ToString());
