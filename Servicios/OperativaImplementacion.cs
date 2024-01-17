@@ -35,9 +35,21 @@ namespace Ejercicio6Obligatorio.Servicios
 
         public void ordenarListaClientes(List<ClienteDto> listaAntigua)
         {
-            if(listaAntigua.Count >= 3)
+            int[] edad = new int[3];
+            if (listaAntigua.Count >= 3)
             {
-
+                for (int i = 0; i < listaAntigua(edad).Length - 1; i++)
+                {
+                    for (int j = 0; j < listaAntigua(edad).Length - 1 - i; j++)
+                    {
+                        if (listaAntigua(edad)[j] > listaAntigua[j + 1])
+                        {
+                            int aux = listaAntigua(edad)[j];
+                            listaAntigua[j] = listaAntigua[j + 1];
+                            listaAntigua[j + 1] = aux;
+                        }
+                    }
+                }
             }
             else
             {

@@ -37,6 +37,11 @@ namespace Ejercicio6Obligatorio.Controladores
                         break;
                     case 2:
                         Console.WriteLine("Ordenar lista de Clientes");
+                        oi.ordenarListaClientes(listaCliente);
+                        foreach (ClienteDto clienteNuevo in listaCliente)
+                        {
+                            Console.WriteLine(clienteNuevo.ToString());
+                        }
                         break;
                     default:
                         Console.WriteLine("La opción elegida no existe.");

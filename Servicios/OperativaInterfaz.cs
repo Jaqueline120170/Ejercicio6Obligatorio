@@ -10,5 +10,6 @@ namespace Ejercicio6Obligatorio.Servicios
     internal interface OperativaInterfaz
     {
         public void darAltaCliente(List<ClienteDto> listaAntigua);
+        public void ordenarListaClientes(List<ClienteDto> listaAntigua);
     }
 }
