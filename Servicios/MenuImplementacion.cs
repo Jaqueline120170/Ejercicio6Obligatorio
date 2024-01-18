@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace Ejercicio6Obligatorio.Servicios
 {
+    /// <summary>
+    /// Clase que contiene la implementacion de cada mètodo del menuInterfaz
+    /// @author JRT - 18/01/2024
+    /// </summary>
     internal class MenuImplementacion : MenuInterfaz
     {
 

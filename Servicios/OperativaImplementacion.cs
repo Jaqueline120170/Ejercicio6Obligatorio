@@ -7,6 +7,10 @@ using System.Threading.Tasks;
 
 namespace Ejercicio6Obligatorio.Servicios
 {
+    /// <summary>
+    /// Clase que contiene la implementación de los métodos de la interfaz OperativaInterfaz
+    /// @author JRT - 18/01/2024
+    /// </summary>
     internal class OperativaImplementacion : OperativaInterfaz
     {
         public void darAltaCliente(List<ClienteDto> listaAntigua)
@@ -14,6 +18,13 @@ namespace Ejercicio6Obligatorio.Servicios
             listaAntigua.Add(crearNuevoCliente());
         }
 
+
+        /// <summary>
+        /// Mètodo que recoge los atributos o datos que conformaran a un nuevo cliente para
+        /// ser añadido a la lista, en este caso, se trata de un privado porque solo se harà o implementará en esta clase.
+        /// @author JRT- 18/01/2024
+        /// </summary>
+        /// <returns></returns>
         private ClienteDto crearNuevoCliente()
         {
 
@@ -35,16 +46,15 @@ namespace Ejercicio6Obligatorio.Servicios
 
         public void ordenarListaClientes(List<ClienteDto> listaAntigua)
         {
-            int[] edad = new int[3];
-            if (listaAntigua.Count >= 3)
+            if(listaAntigua.Count >= 3)
             {
-                for (int i = 0; i < listaAntigua(edad).Length - 1; i++)
+                for (int i = 0; i < listaAntigua.Count - 1; i++)
                 {
-                    for (int j = 0; j < listaAntigua(edad).Length - 1 - i; j++)
+                    for (int j = 0; j < listaAntigua.Count - 1 - i; j++)
                     {
-                        if (listaAntigua(edad)[j] > listaAntigua[j + 1])
+                        if (listaAntigua[j].Edad < listaAntigua[j + 1].Edad)
                         {
-                            int aux = listaAntigua(edad)[j];
+                            ClienteDto aux = listaAntigua[j];
                             listaAntigua[j] = listaAntigua[j + 1];
                             listaAntigua[j + 1] = aux;
                         }

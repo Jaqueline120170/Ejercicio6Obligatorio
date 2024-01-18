@@ -3,8 +3,18 @@ using Ejercicio6Obligatorio.Servicios;
 
 namespace Ejercicio6Obligatorio.Controladores
 {
+    /// <summary>
+    /// Clase principal de la aplicacion
+    /// @author JRT - 18/01/2024
+    /// </summary>
+    /// <param name="args"></param>
     internal class Program
     {
+        /// <summary>
+        /// metodo de entrada de la aplicacion 
+        /// @author JRT - 18/01/2024
+        /// </summary>
+        /// <param name="args"></param>
         static void Main(string[] args)
         {
             MenuInterfaz mi = new MenuImplementacion();
